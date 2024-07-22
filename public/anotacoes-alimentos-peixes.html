@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Petz anotações alimentos peixes - Poytara</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+      <style type="text/css">
+        .medicamento {
+          font-weight: bold;
+          font-size: 1.2em;
+          text-decoration-style: dashed;
+        }
+        *{
+          background-color: #fff;
+        }
+
+        body{
+          font-family: 'Roboto', sans-serif;
+        }
+
+        div.main {
+          width: 90%;
+          margin: 10px auto;
+        }
+
+        .white {
+          color: white;
+        }
+        h2{
+          font-weight: bold;
+          margin-bottom: 0;
+          letter-spacing: .05em;
+        }
+
+        h4 {
+          text-align: center;
+        }
+
+
+        ul {
+          margin: 0;
+          margin-bottom: 0;
+          padding-bottom: 0;
+          list-style-type: none;
+        }
+
+        p{
+          -moz-osx-font-smoothing: grayscale;
+          -webkit-font-smoothing: antialiased !important;
+          -moz-font-smoothing: antialiased !important;
+          text-rendering: optimizelegibility !important;
+          letter-spacing: .03em;
+          color: #777;
+          margin-bottom: 0;
+        }
+
+        .text-style-one {
+          color: #777;
+          font-size: 16px;
+          font-family: "Roboto", Arial;
+          line-height: 1.25em;
+          padding: 0;
+          text-align: justify;
+        }
+
+        .text-style-two{
+          color: #333;
+          font-weight: 400;
+          font-size: 1rem;
+          line-height: 1.8;
+          text-align: justify;
+          margin-bottom: 0;
+        }
+        .table-info td.label{
+          min-width: 25%;
+          max-width: 25%;
+          width: 25%;
+          text-align: right;
+        }
+        
+        .table-info, .table-info tr,.table-info td{
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+        .table-info, .table-info tr,.table-info td{
+          
+        }
+        .table-info {
+          margin-bottom: 0;
+          padding-bottom: 0;
+          width: 100%;
+        }
+        @page {
+            size: 21cm 29.7cm;
+            margin: 30mm 45mm 30mm 45mm;
+             /* change the margins as you want them to be. */
+        }
+
+        .frame2 {
+          margin-left: 30px;
+        }
+        .frame1 {
+          margin-right: 30px;
+        }
+
+        @media print{@page {size: landscape}}
+
+        body {
+          margin: 18px;
+        }
+        div.produtos-container {
+          
+        }
+        table.table-produtos {
+          border: none;
+          width: 100%;
+        }
+        table.table-produtos td, table.table-produtos th{
+          border: 1px solid black;
+        }
+        table.table-produtos th{
+          border-top: none;
+        }
+        table.table-produtos th{
+          text-align: center;
+        }
+        table.table-produtos .produto{
+          width: 80%;          
+        }
+        table.table-produtos .qtd{
+          width: 20%;
+        }
+        td.spanned {
+          padding: 0;
+        }
+        td.titulo {
+          text-align: center;
+        }
+        td.titulo h4 {
+          margin: 0;
+          padding: 0;
+          font-weight: bold;
+        }
+        .hidden-print {
+          margin-bottom: 8px;
+          text-align: center;
+        }
+        @media print {
+           .hidden-print {
+              visibility: hidden;
+           }
+        }
+      </style>
+  </head>
+  <body>
+    <div class="main">
+      <div>
+        <a target="" href="/menu.html">
+          <i class="fa fa-arrow-left"></i> voltar 
+        </a>
+      </div>
+      <div>
+        <a target="_blank" href="https://teams.microsoft.com/l/meetup-join/19%3ameeting_NGZmMDFjYjctMTIyNC00M2ViLThkNjktMmI3NWRkYjllY2Zm%40thread.v2/0?context=%7B%22Tid%22%3A%224ca8e160-86e6-4d95-bfd9-16f0eef52e7f%22%2C%22Oid%22%3A%22d55815a1-c390-46c9-8a58-88683352da05%22%2C%22IsBroadcastMeeting%22%3Atrue%2C%22role%22%3A%22a%22%7D&btype=a&role=a">
+          Link da live
+        </a>
+      </div>
+      <h1>Petz anotações alimentos peixes - Poytara</h1>
+      <div class="card" style="">
+        <div class="card-body">
+          <div class="card-title">
+            <h2 class="bg-light">Sobre a Poytara:</h2>
+          </div>
+          <p class="text-style-one unstyled">
+            Indústria de ração pra peixes ornamentais e répteis(tartaruga tigre d'agua e jabuti)
+          </p>  
+        </div>
+      </div>
+
+      <div class="card" style="">
+        <div class="card-body">
+          <div class="card-title">
+            <h2 class="bg-light">Categorias de aquarismo</h2>
+          </div>
+          <p class="text-style-one unstyled">
+            Peixes: Marinhos, Água doce, Lagos <br>
+            <b>Herbívoros</b> - se alimentam de vegetais <br>
+            <b>Carnívoros</b> - comem carne(outros peixes) <br>
+            <b>Onívoros</b> - são herbívoros e carnívoros <br>
+            Peixes habitam em: <br>
+            Superfície <br>
+            Meia água<br>
+            Fundo
+          </p>  
+        </div>
+      </div>
+      <div class="card" style="">
+        <div class="card-body">
+          <div class="card-title">
+            <h2 class="bg-light">Classificação das linhas das rações Poytara:</h2>
+          </div>
+          <p class="text-style-one unstyled">
+            Premium - Embalagem branca, linha clássica(combate ou entrada) <br>
+            Super Premium - Embalagem preta, Linha Black line e linha BSF <br>
+            Filhote <br>
+            Espécies específicas <br>
+            Universais <br>
+            Coloração <br>
+            Saúde e bem-estar <br>
+          </p>
+        </div>
+      </div>
+    
+      <div class="card" style="">
+        <div class="card-body">
+          <div class="card-title">
+            <h2 class="bg-light">Linha BSF:</h2>
+          </div>
+          <p class="text-style-one unstyled">
+          	BSF = Black soldier fly (mosca soldado negro) <br>
+          	sustentabilidade <br>
+          	farinha de proteína com base em inseto(mosca)
+          </p>  
+        </div>
+      </div>
+
+      <div class="card" style="">
+        <div class="card-body">
+          <div class="card-title">
+            <h2 class="bg-light">Formatos de ração:</h2>
+          </div>
+          <p class="text-style-one unstyled">
+          	<b>Flocos</b> - para pequenos peixes, pode ser esfarelado com a mão <br>
+          	<b>Crisps</b> - desce lentamente, atende peixes de superfície e fundo <br>
+          	<b>Grãos</b> - podem flutuar ou afundar <br>
+          	<b>Sticks(palitos)</b> -, para peixes maiores como carpa, rações chamadas monsters <br>
+          	<b>Comprimidos</b> - afundam rápido, para peixes de fundo, linha específica para cascudo
+          </p>  
+        </div>
+      </div>
+      <div class="card" style="">
+        <div class="card-body">
+          <div class="card-title">
+            <h2 class="bg-light">Ração diária vs. Ração universal</h2>
+          </div>
+          <p class="text-style-one unstyled">
+          	<b>diária</b>: são rações para espécies específicas <br>
+          	<b>universal</b>: <br>
+          	podem ser dadas para diversas espécies de peixes <br>
+          	são compostas por um mix <br>
+          	pode ser uma venda complementar <br>
+          	atuam na saúde e bem-estar <br>
+          	a spirulina e colors atuam na parte da coloração <br>
+          	a linha garlic(alho) contém Alicina que ajuda na manutenção da saúde e bem-estar <br>
+          	peixe sofre muito com mudança de temperatura, fácil de pegar doença, a ração serve como imuno-estimulantes que vão ajudar a manutenção da saúde do peixe <br>
+          	Linha Immunity: para peixes que ficou doente ou está se recuperando <br>
+          	Rações universais servem como complemento pra saúde e bem-estar do peixe. <br>
+          	Linhas da Poytara de universais: <br>
+          	Spirulina 20 <br>
+          	Colors <br>
+          	Squid - feita de proteína de lula <br>
+          	Spirulina <br>
+          	Immunity <br>
+          	Garlic <br>
+          	BSF <br>
+          	Tropicais Flocos e Tropicais Dia a dia - para pequenos peixes tropicais como ciclídeos americanos, espécies amazônicas. São de uso diário <br>
+          	Alicina(vem do alho) para saúde e bem-estar <br>
+          	Spirulina para saúde e coloração <br>
+          	Astaxantina para coloração
+          </p>  
+        </div>
+      </div>
+
+      <div class="card" style="">
+        <div class="card-body">
+          <div class="card-title">
+            <h2 class="bg-light">
+            	Linha Clássica(pote branco):
+            </h2>
+          </div>
+          <p class="text-style-one unstyled">
+          	Betta <br>
+          	Kinguio(ou Goldfish, peixe dourado) <br>
+          	Graões flutuantes <br>
+          	Tropicais <br>
+          	Peixes de fundo <br>
+          	Spirulina 20% - saúde e coloração, 100% vegetal de alta  <br>digestabilidade, imunoestimulantes <br>
+          	Cascudos <br>
+          	Jabuti (réptil) <br>
+          	Trigre d'água (réptil) <br>
+          	Acara disco <br>
+          	Ciclídeos <br>
+          	Carnívoros <br>
+          	Lagos(carpa 6x1, saco preto)
+          </p>  
+        </div>
+      </div>
+
+      <div class="card" style="">
+        <div class="card-body">
+          <div class="card-title">
+            <h2 class="bg-light">Yucca</h2>
+          </div>
+          <p class="text-style-one unstyled">
+          	Excesso de amônia mata peixes e está principalmente nas fezes
+          	A Yucca em peixes ajuda na manutenção da água, auxiliando fazendo com que as fezes não gerem tanta amônia. <br>
+          	<br>
+          	O extrato de yucca é um aditivo nutricional extraído da planta Yucca schidigera que cresce nos desertos das Américas Central e do Norte. <br>
+
+          	Em sua composição ele possui dois componentes, a saponina e a glicoproteína, que apresentam alguns benefícios para a saúde dos animais como: <br>
+
+          	Agir como anti-inflamatório natural, auxiliando nos casos de artrite, reduzindo o inchaço e a dor; <br>
+          	Reduzir o teor de amônia e o odor das fezes dos animais; <br>
+          	Melhorar o ambiente que o animal vive, principalmente para os peixes de estimação devido à redução de amônia que é tóxica para esses animais dependendo da quantidade eliminada na água.
+          </p>  
+        </div>
+      </div>
+
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+ <script type="text/javascript">
+   
+ </script>
+</html>

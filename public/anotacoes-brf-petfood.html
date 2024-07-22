@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Petz anotações BRF Petfood</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+      <style type="text/css">
+        .medicamento {
+          font-weight: bold;
+          font-size: 1.2em;
+          text-decoration-style: dashed;
+        }
+        *{
+          background-color: #fff;
+        }
+
+        body{
+          font-family: 'Roboto', sans-serif;
+        }
+
+        div.main {
+          width: 90%;
+          margin: 10px auto;
+        }
+
+        .white {
+          color: white;
+        }
+        h2{
+          
+          font-weight: bold;
+          margin-bottom: 0;
+          
+        }
+
+        h4 {
+          text-align: center;
+        }
+
+
+        ul {
+          margin: 0;
+          margin-bottom: 0;
+          padding-bottom: 0;
+          list-style-type: none;
+        }
+
+        p{
+          -moz-osx-font-smoothing: grayscale;
+          -webkit-font-smoothing: antialiased !important;
+          -moz-font-smoothing: antialiased !important;
+          text-rendering: optimizelegibility !important;
+          letter-spacing: .03em;
+          color: #777;
+          margin-bottom: 0;
+        }
+
+        .text-style-one {
+          color: #777;
+          font-size: 16px;
+          font-family: "Roboto", Arial;
+          line-height: 1.25em;
+          padding: 0;
+          text-align: justify;
+        }
+
+        .text-style-two{
+          color: #333;
+          font-weight: 400;
+          font-size: 1rem;
+          line-height: 1.8;
+          text-align: justify;
+          margin-bottom: 0;
+        }
+        .table-info td.label{
+          min-width: 25%;
+          max-width: 25%;
+          width: 25%;
+          text-align: right;
+        }
+        
+        .table-info, .table-info tr,.table-info td{
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+        .table-info, .table-info tr,.table-info td{
+          
+        }
+        .table-info {
+          margin-bottom: 0;
+          padding-bottom: 0;
+          width: 100%;
+        }
+        @page {
+            size: 21cm 29.7cm;
+            margin: 30mm 45mm 30mm 45mm;
+             /* change the margins as you want them to be. */
+        }
+
+        .frame2 {
+          margin-left: 30px;
+        }
+        .frame1 {
+          margin-right: 30px;
+        }
+
+        @media print{@page {size: landscape}}
+
+        body {
+          margin: 18px;
+        }
+        div.produtos-container {
+          
+        }
+        table.table-produtos {
+          border: none;
+          width: 100%;
+        }
+        table.table-produtos td, table.table-produtos th{
+          border: 1px solid black;
+        }
+        table.table-produtos th{
+          border-top: none;
+        }
+        table.table-produtos th{
+          text-align: center;
+        }
+        table.table-produtos .produto{
+          width: 80%;          
+        }
+        table.table-produtos .qtd{
+          width: 20%;
+        }
+        td.spanned {
+          padding: 0;
+        }
+        td.titulo {
+          text-align: center;
+        }
+        td.titulo h4 {
+          margin: 0;
+          padding: 0;
+          font-weight: bold;
+        }
+        .hidden-print {
+          margin-bottom: 8px;
+          text-align: center;
+        }
+        @media print {
+           .hidden-print {
+              visibility: hidden;
+           }
+        }
+      </style>
+  </head>
+  <body>
+    <div class="main">
+
+      <div>
+        <a target="" href="/menu.html">
+          <i class="fa fa-arrow-left"></i> voltar 
+        </a>
+      </div>
+
+      <div>
+        <a target="_blank" href="https://teams.microsoft.com/convene/meetings?url=%2Fl%2Fmeetup-join%2F19%3Ameeting_NjgyZTk5YjEtNWU5ZS00ZjllLTk2ZDAtNWYwZjVmNjA0ODc4%40thread.v2%2F0%3Fcontext%3D%257B%2522Tid%2522%253A%25224ca8e160-86e6-4d95-bfd9-16f0eef52e7f%2522%252C%2522Oid%2522%253A%2522d55815a1-c390-46c9-8a58-88683352da05%2522%252C%2522IsBroadcastMeeting%2522%253Atrue%252C%2522role%2522%253A%2522a%2522%257D%26btype%3Da%26role%3Da%26anon%3Dtrue&tenantId=4ca8e160-86e6-4d95-bfd9-16f0eef52e7f&deeplinkId=75f8588d-6935-49ab-88c8-353df1449efb">
+          Link da live
+        </a>
+      </div>
+
+      <h1>Petz anotações BRF - Petfood</h1>
+        
+      <div class="card" style="">
+        
+        <div class="card-body">
+          <div class="card-title">
+            <h2 class="bg-light">Categorias de ração</h2>
+          </div>
+          <p class="text-style-one unstyled">
+            Economico - Apolo, Átila. <br>
+            Premium - Primocão, Primogato. <br>
+            High premium - Gran Plus, Three Dogs, Three Cats. <br>
+            Super premium tradicional - Three Dogs Funcional, Three Cats Funcional. <br>
+            Super premium natural - Guabi Natural, Biofresh - não tem conservante artificial, transgênicos, corante, aroma artificial. <br>
+            Em cada salto de categoria aumenta a qualidade dos componentes, energia metabolizável, diminui o uso de corantes, conservantes, transgênicos.
+          </p>  
+        </div>
+      </div>
+      <div class="card" style="">
+        <div class="card-body">
+          <div class="card-title">
+            <h2 class="bg-light">Biofresh gatos</h2>
+            
+          </div>
+          <p class="text-style-one unstyled">
+            Feita por especialistas em felinos. <br>
+            Paladar estimulado com carne fresca - carne de alta qualidade, melhores partes, maior nutrição. <br>
+            Trato urinário saudável - equilibrio de minerais, controle de ph da urina para não formar pedras no canal urinário e entupir. <br>
+            Fezes firmes e odor reduzido - proteína de alta absorção, extrato de yucca(reduzir odor). <br>
+            Saúde oral favorecida - hexametafosfato de sódio para ajudar reduzir tártaro. <br>
+            Tamanho ideal de partícula - formato para ajudar a preensar.
+          </p>  
+        </div>
+      </div>
+      
+      <div class="card" style="">
+        <div class="card-body">
+          <div class="card-title">
+            <h2 class="bg-light">Diferenciais da biofresh gatos</h2>
+            
+          </div>
+          <p class="text-style-one unstyled">
+            Alta inclusão de alimentaos frescos. <br>
+            Contém hexametafosfato de sódio. <br>
+            Equilibrio de minerais que auxilia no controle do ph urinário. <br>
+            Atmosfera controlada que mantém os alimentos em preservação 100% segura e natural.
+          </p>  
+        </div>
+      </div>
+
+      <div class="card" style="">
+        <div class="card-body">
+          <div class="card-title">
+            <h2 class="bg-light">Sabores biofresh gatos</h2>
+            
+          </div>
+          <p class="text-style-one unstyled">
+            Frango, salmão, peixe branco.
+          </p>  
+        </div>
+      </div>
+      <div class="card" style="">
+        <div class="card-body">
+          <div class="card-title">
+            <h2 class="bg-light">Biofresh gatos é grain free</h2>
+            
+          </div>
+          <p class="text-style-one unstyled">
+            Não contém cereais tradicionais(milha, trigo, arroz).
+            corboidrato vem da ervilha.
+            Sem glúten, trsngênicos
+          </p>  
+        </div>
+      </div>
+      <div class="card" style="">
+        <div class="card-body">
+          <div class="card-title">
+            <h2 class="bg-light">Biofresh gatos pacote com atmosfera contrololada</h2>
+            
+          </div>
+          <p class="text-style-one unstyled">
+            Injetado nitrogênio no pacote, que aumenta durabilidade e crocância da ração.
+            Menos risco de quebra da partícula.
+          </p>  
+        </div>
+      </div>
+      <div class="card" style="">
+        <div class="card-body">
+          <div class="card-title">
+            <h2 class="bg-light">Bolas de pelo</h2>
+            
+          </div>
+          <p class="text-style-one unstyled">
+            Toda linha da Biofresh gatos combate bola de pelos com agentes especiais(cana de açucar, etc.).
+          </p>  
+        </div>
+      </div>
+      
+      <div class="card" style="">
+        <div class="card-body">
+          <div class="card-title">
+            <h2 class="bg-light">Biofresh gatos castrado</h2>
+            
+          </div>
+          <p class="text-style-one unstyled">
+            A partir de 6 meses. <br>
+            Mais Taurina, carnitina e fibras para maior saciedade.
+          </p>  
+        </div>
+      </div>
+      
+      <div class="card" style="">
+        <div class="card-body">
+          <div class="card-title">
+            <h2 class="bg-light">Biofresh gatos senior</h2>
+            
+          </div>
+          <p class="text-style-one unstyled">
+            A partir de 7 anos.
+            Propriedades para longevidade saudável, saúde renal e cardíaca. <br>
+            niveis maior de omega(cérebro), propriedades para articulações
+            Mais nutrientes. <br>
+            Baixo fósforo e cálcio para evitar problema renal. <br>
+            Mais proteína de alta digestibilidade. <br>
+          </p>  
+        </div>
+      </div>
+      
+      <div class="card" style="">
+        <div class="card-body">
+          <div class="card-title">
+            <h2 class="bg-light">Gran Plus biscoito - lançamento</h2>
+            
+          </div>
+          <p class="text-style-one unstyled">
+            Filhote sabor leite. <br>
+            Adulto sabor carne e frango. <br>
+            Ajuda na saúde odontológica. <br>
+          </p>  
+        </div>
+      </div>
+      
+      <div class="card" style="">
+        <div class="card-body">
+          <div class="card-title">
+            <h2 class="bg-light">Gran Plus patê - lançamento</h2>
+            
+          </div>
+          <p class="text-style-one unstyled">
+
+            Alimento completo. <br>
+            Comum dar com ração a seca. <br>
+            Cão - 300g. <br>
+            Gato - 150g. <br>
+            Sabor carne - para gato comum usar patê para alimentação completa. <br>
+            Hairball - auxilia no controle de bolas de pelo. <br>
+            Versão com pedaçoes de cenoura. <br>
+          </p>  
+        </div>
+      </div>
+      
+      <div class="card" style="">
+        <div class="card-body">
+          <div class="card-title">
+            <h2 class="bg-light"></h2>
+            
+          </div>
+          <p class="text-style-one unstyled">
+            
+          </p>  
+        </div>
+      </div>
+      
+      
+      <div class="card" style="">
+        <div class="card-body">
+          <div class="card-title">
+            <h2 class="bg-light">Perguntas e respostas</h2>
+            
+          </div>
+          <p class="text-style-one unstyled">
+            Biofresh cão não tem versão Grain free, a Guabi natural sim. <br>
+            Grain free indica que a fonte de carboidrato não é cereal tradicional. <br>
+            Biofresh gatos é lentilha a grain free.
+            <br>
+            <br>
+            Bioscoite de filhote pode ser em qualquer idade, não tem faixa. <br>
+            A partir de quando conseguir comer. <br>
+            Petisco dar como petisco, não exagerar nem trocar por alimento. <br>
+            
+            <br>
+            Para transição de ração:
+            quanto mais lento for, melhor. <br>
+            Fazer uma mudança gradual em porções de 10% cada ração por dia
+            gato pode ter stress por troca de alimento, ele pode desenvolver problemas, doenças pelo stress: vômito, diarréia, obstruir sistema urinário, disturbio do sistema gastro-intestinal. <br>
+            O animal desenvolve um equilíbrio do sistema digestivo, um equilibrio de bactérias que operam na digestão e ao trocar o alimento acontece um desequilíbrio no sistema e ele fica com distúrbios.
+            <br>
+            <br>
+            Quais características para que um alimento seja considerado Super Premium natural?
+            Não pode conter transgênicos, corantes ou conservantes artificiais.
+            <br>
+            <br>
+            A linha Biofresh gatos pode ser dada?
+            A partir de 6 meses de vida.
+
+            <br>
+            <br>
+            Atmosfera controlada:
+            Diminui oxigênio no pacote, aumenta durabilidade e conserva, mantém a crocância e sabor e diminui a quebra das partículas.
+            <br>
+            <br>
+
+            Os patês Gran Plus são alimentos completos para: cães e gatos podendo ser a única fonte de alimentação.
+
+
+          </p>  
+        </div>
+      </div>
+      
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+ <script type="text/javascript">
+   
+ </script>
+</html>

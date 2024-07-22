@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Petz anotações farmácia</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+      <style type="text/css">
+        .medicamento {
+          font-weight: bold;
+          font-size: 1.2em;
+          text-decoration-style: dashed;
+        }
+        *{
+          background-color: #fff;
+        }
+
+        body{
+          font-family: 'Roboto', sans-serif;
+        }
+
+        div.main {
+          width: 90%;
+          margin: 10px auto;
+        }
+
+        .white {
+          color: white;
+        }
+        h2{
+          
+          font-weight: bold;
+          margin-bottom: 0;
+          letter-spacing: .05em;
+        }
+
+        h4 {
+          text-align: center;
+        }
+
+
+        ul {
+          margin: 0;
+          margin-bottom: 0;
+          padding-bottom: 0;
+          list-style-type: none;
+        }
+
+        p{
+          -moz-osx-font-smoothing: grayscale;
+          -webkit-font-smoothing: antialiased !important;
+          -moz-font-smoothing: antialiased !important;
+          text-rendering: optimizelegibility !important;
+          letter-spacing: .03em;
+          color: #777;
+          margin-bottom: 0;
+        }
+
+        .text-style-one {
+          color: #777;
+          font-size: 16px;
+          font-family: "Roboto", Arial;
+          line-height: 1.25em;
+          padding: 0;
+          text-align: justify;
+        }
+
+        .text-style-two{
+          color: #333;
+          font-weight: 400;
+          font-size: 1rem;
+          line-height: 1.8;
+          text-align: justify;
+          margin-bottom: 0;
+        }
+        .table-info td.label{
+          min-width: 25%;
+          max-width: 25%;
+          width: 25%;
+          text-align: right;
+        }
+        
+        .table-info, .table-info tr,.table-info td{
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+        .table-info, .table-info tr,.table-info td{
+          
+        }
+        .table-info {
+          margin-bottom: 0;
+          padding-bottom: 0;
+          width: 100%;
+        }
+        @page {
+            size: 21cm 29.7cm;
+            margin: 30mm 45mm 30mm 45mm;
+             /* change the margins as you want them to be. */
+        }
+
+        .frame2 {
+          margin-left: 30px;
+        }
+        .frame1 {
+          margin-right: 30px;
+        }
+
+        @media print{@page {size: landscape}}
+
+        body {
+          margin: 18px;
+        }
+        div.produtos-container {
+          
+        }
+        table.table-produtos {
+          border: none;
+          width: 100%;
+        }
+        table.table-produtos td, table.table-produtos th{
+          border: 1px solid black;
+        }
+        table.table-produtos th{
+          border-top: none;
+        }
+        table.table-produtos th{
+          text-align: center;
+        }
+        table.table-produtos .produto{
+          width: 80%;          
+        }
+        table.table-produtos .qtd{
+          width: 20%;
+        }
+        td.spanned {
+          padding: 0;
+        }
+        td.titulo {
+          text-align: center;
+        }
+        td.titulo h4 {
+          margin: 0;
+          padding: 0;
+          font-weight: bold;
+        }
+        .hidden-print {
+          margin-bottom: 8px;
+          text-align: center;
+        }
+        @media print {
+           .hidden-print {
+              visibility: hidden;
+           }
+        }
+      </style>
+  </head>
+  <body>
+    <div class="main">
+      <div>
+        <a target="" href="/menu.html">
+          <i class="fa fa-arrow-left"></i> voltar 
+        </a>
+      </div>
+      
+      <h1>Petz anotações farmácia</h1>
+
+      <div class="card" style="">
+        <div class="card-body">
+          <div class="card-title">
+            <h2 class="bg-light">
+              Remédios para tratar feridas de cachorro e gato
+            </h2>  
+          </div>
+          
+          <h4 class="bg-danger white">Cicatrizantes para infecções, repelentes, anti-fungicos e sarnicidas</h4>
+          <p class="text-style-one unstyled">
+            <span class="medicamento">Medicamento: CMR</span>, pomada, é homeopático(feito de plantas: calêndula...), uso contínuo, sem efeito colateral.<br>
+            <span class="medicamento">Medicamento: Alantol</span>, pomada, a base de alantoína e zinco.<br>
+            Esses dois acima(CMR e Alantol) podem ser usado em feridas abertas, são pomadas e agem por mais tempo que spray.<br>
+            <span class="medicamento">Medicamento: Regepil</span>, spray, estimula cicatrizante, usar em feridas mais secas, cicatrização está lenta, mais fácil aplicação em locais difícieis, evapora rápido, age por menos tempo que pomadas.<br>
+            <span class="medicamento">Medicamento: Vetaglós</span>, contém antibiótico (combate infecção bacteriana), indicado em feridas bem infeccionadas com pus, vitamina A como anti-inflamatório(não muito forte anti-inf), contém uréia(potencializa anti-inf), mais anti-bio do que anti-inf.<br>
+            <span class="medicamento">Medicamento: Dermotrat</span>, apresentação em creme e spray, contém anti-inf, anti-bio e anti-fungo, mais fácil de acertar se não sabe a causa do ferimento.<br>
+            <span class="medicamento">Medicamento: Neodexa</span>, aprensentação em creme e spray, o creme contém anti-bio, anti-fungo, anti-inf e anestésico, mais completo, indicado para muita dor. O spray contém anti-bio e anti-inf, pra feridas mais simples, mais fácil aplicar mas menos princípios ativos
+           .<br>
+            <span class="medicamento">Medicamento: Bactrovet</span> (prata), em bula não tem indicação pra cães e gatos, mais muitos veterinários indicam. Contém anti-bio, cicatrizante, inseticidas(repelem mosca, mosquito). Usar com cuidado em cão e gato
+           .<br>
+            <span class="medicamento">Medicamento: Tiuram</span>, spray, combate fungo e sarna, não contém anti-bio, anti-inf. Alguns indicam para ser adjuvante em tratamento de sarna e fungo, um auxiliar junto com outros medicamentos oral mais fortes anti-fungo, combater pequenas manifestações de fungos
+          </p>  
+        </div>
+      </div>
+      <div class="card" style="">
+        <div class="card-body">
+          <div class="card-title">
+            <h2 class="bg-light">Limpeza e higienização</h2>
+            
+          </div>
+          <p class="text-style-one unstyled">
+            produtos como se fosse uma água oxigenada melhorada.<br>
+            produtos que contém clorexidina junto, que servem como antisséptico.<br>
+            Clorexidina é quase um anti-bio, mas para quadros iniciais, feridas começando.<br>
+            <span class="medicamento">medicamento: Furanil</span>, pomada ou spray, limpar com gaze.<br>
+            <span class="medicamento">medicamento: Clorexicorten</span>, contém anti-inf, quadros mais avançados de infecção inicial.<br>
+            <span class="medicamento">medicamento prevenção: Ectopar</span>, dermatite ou sugadores na ponta de orelhas.<br>
+            <span class="medicamento">medicamento prevenção: Arenales</span> fator infecções e fator pró-himune.<br>
+            <span class="medicamento">medicamento prevenção: Proderma</span>, ajuda a diminuir inflamações na pele, combate dermatite atópica.<br>
+          </p>  
+        </div>
+      </div>
+      <div class="card" style="">
+        <div class="card-body">
+          <div class="card-title">
+            <h2 class="bg-light">Pomadas cicatrizantes</h2>
+            
+          </div>
+          <p class="text-style-one unstyled">
+            <span class="medicamento">medicamento Dermotrat</span>: básico, antio-bio, anti-fung, anti-inf.<br>
+            <span class="medicamento">medicamento Vetaglos</span>: voltada pra infecção, não muito boa anti-inf(vitamina A), hidrata a pele(ureia).<br>
+            <span class="medicamento">medicamento Crema 6A</span>: 2 anti-bio, potente anti-fungo, anti-inf, anestésico(para muita dor) pra facilitar aplicação.<br>
+            <span class="medicamento">medicamento Neodexa:</span> pomada e spray, pomada é mais completa(ver outras anotações).<br>
+            <span class="medicamento">medicamento CMR:</span> baseada em plantas, não contém contra-indicações, das plantas vem o poder anti-bio, anti-inf e cicatrizante
+            exemplos:
+            pequenas feridas recorrentes de alergia, indicado CMR pra longa aplicação.<br>
+            feridas doloridas e/ou grandes, indicado com anestésico e potentes anti-bio e anti-fungo.<br>
+            feridas com infecção grande(pus, abcesso), usar vetaglós(3 tipos anti-bio) que é não forte anti-inf.<br>
+          </p>  
+        </div>
+      </div>
+
+
+      <div class="card" style="">
+        <div class="card-body">
+          <div class="card-title">
+            <h2 class="bg-light">Regepil</h2>
+            
+          </div>
+          <p class="text-style-one unstyled">
+            spray cicatrizante.<br>
+            pode ser usado por longos períodos.<br>
+            pode ser usado em qualquer tipo de ferida.<br>
+            outros cicatrizantes não podem ser usados por longos períodos.<br>
+          </p>  
+        </div>
+      </div>
+    
+      <div class="card" style="">
+        <div class="card-body">
+          <div class="card-title">
+            <h2 class="bg-light">Medicamentos com dexametasona (antialérgico)</h2>
+            
+          </div>
+          <p class="text-style-one unstyled">
+            azium.<br>
+            alergocort.<br>
+            biodex.<br>
+            cortvet.<br>
+            dexagard.<br>
+            dexatabs.<br>
+            dexium.<br>
+          </p>  
+        </div>
+      </div>
+      
+      
+      <div class="card" style="">
+        <div class="card-body">
+          <div class="card-title">
+            <h2 class="bg-light">Antibiótico doxiciclina</h2>
+            
+          </div>
+          <p class="text-style-one unstyled">
+            combate infecções por bactérias diversas
+          </p>  
+        </div>
+      </div>
+
+      <div class="card" style="">
+        <div class="card-body">
+          <div class="card-title">
+            <h2 class="bg-light">Antialérgicos esteroidais a base de cortisona</h2>
+            
+          </div>
+          <p class="text-style-one unstyled">
+            prediderm (cortisona).<br>
+            alcort (cortisona).<br>
+            meticorten (cortisona).<br>
+            alergocort.<br>
+            azium, alergocort (dexametasona).<br>
+          </p>  
+        </div>
+      </div>
+
+      <div class="card" style="">
+        <div class="card-body">
+          <div class="card-title">
+            <h2 class="bg-light">Características do Dexametasona</h2>
+            
+          </div>
+          <p class="text-style-one unstyled">
+            potente anti-inflamatório e anti-alérgico.<br>
+            fazer desmame.<br>
+            bastante efeitos colaterais.<br>
+            efeitos colaterais: fome, sede, problemas na tireóide, úlceras, não deve ser gestante nem diabetes.<br>
+          </p>  
+        </div>
+      </div>
+
+      <div class="card" style="">
+        <div class="card-body">
+          <div class="card-title">
+            <h2 class="bg-light">Características do Alergovet C</h2>
+            
+          </div>
+          <p class="text-style-one unstyled">
+            baseado na clemastina (anti-estamínico), não na cortisona.<br>
+            a cortisona produz muitos efeitos colaterais.<br>
+            não esteroidal.<br>
+            efeito mais fraco que cortisona.<br>
+            recomendado para casos iniciais (não agudos).<br>
+            efeito é potencializado pelo omega 3.<br>
+          </p>  
+        </div>
+      </div>
+      <div class="card" style="">
+        <div class="card-body">
+          <div class="card-title">
+            <h2 class="bg-light">Análise de ferimentos, identificando o tipo de ferimento</h2>
+            
+          </div>
+          <p class="text-style-one unstyled">
+              Após análise  do quadro e identificado as características que podem ser:.<br>
+              inflamatório, infeccioso, bacteriano, fungo, ácaro, sarna.<br>
+              o veterinário recomenda o melhor medicamento para o quadro.<br>
+              para dor de ouvido a maioria dos otológicos tem: anti-fúngico, anti-inflamatório, anti-biótico, analgésico. Otológico são doenças do ouvido.<br>
+          </p>  
+        </div>
+      </div>
+    
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+ <script type="text/javascript">
+   
+ </script>
+</html>

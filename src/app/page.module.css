@@ -228,3 +228,9 @@
     transform: rotate(0deg);
   }
 }
+
+.list-group a {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: rgb(60,90,180);
+}
