@@ -27,7 +27,7 @@ rewrites: async () => [
     },
     {
       source: "/barcode-gen.html",
-      destination: "/barcode-generator/index.html",
+      destination: "/barcode-gen.html",
     },
   ]
 };
