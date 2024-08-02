@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Barcode generator</title>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-5.0.2.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/2.1.2/css/dataTables.bootstrap5.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+      <style type="text/css">
+
+
+
+        .text-right {
+          text-align: right;
+        }
+        .text-center {
+          text-align: center;
+        }
+      </style>
+      <link rel="stylesheet" type="text/css" href="css/DataTables/css/dataTables.bootstrap.min.css"/>
+      <link rel="stylesheet" type="text/css" href="css/DataTables/Buttons/css/buttons.dataTables.css"/>
+      <link rel="stylesheet" type="text/css" href="css/DataTables/Buttons/css/buttons.bootstrap.min.css"/>
+
+      <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"/>
+
+      <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/2.1.2/css/dataTables.jqueryui.css"/>
+
+      <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/fixedheader/4.0.1/css/fixedHeader.jqueryui.css"/>
+      <style type="text/css">
+        
+        
+
+      </style>
+  </head>
+  <body>
+
+    <div class="">
+
+      <h1>Gerar dados prioridade abastecimento</h1>
+
+      <div class="" style="padding-bottom: 8px">
+
+        
+        <div class="card">
+          <div class="card-body">
+              <div class="row">
+                <div class="col-6">
+                  <div class="w3-responsive">
+                    <div class="mb-3">
+                      <label for="userInput" class="form-label">Inserir dados romaneio</label>
+                      <textarea class="form-control" id="inputRomaneio" rows="6"></textarea>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="mb-3">
+                    <label for="userInput" class="form-label">Inserir dados estoque atual</label>
+                    <textarea class="form-control" id="inputEstoque" rows="6"></textarea>
+                  </div>
+                    
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-10">
+                  <p>&nbsp;</p>
+                </div>
+                <div class="col-2">
+                  <button id="gerar" class="btn btn-lg btn btn-primary">Gerar</button>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+              <div class="bordered">
+                <h4 id="titlePending">Relatório pré-visualização dos dados <span></span> </h4>
+                <div class="" id="relatPreVisualiza">
+                  <table id="relatorio" class="display datatable" style="width:100%">
+                    <thead>
+                      <tr>
+                        <th>Código</th>
+                        <th>Descrição produto</th>
+                        <th>Quantidade</th>
+                        <th>Estoque atual loja</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      
+                    </tbody>
+                  </table>
+
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+          
+
+        </div>
+    </div>
+
+    
+
+    
+  </body>
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="js/jquery.hotkeys.js"></script>
+   <script src="js/bootstrap-5.0.2-bundle.min.js"></script>
+
+  <script type="text/javascript" src="js/DataTables/JSZip/jszip.min.js"></script>
+  <script type="text/javascript" src="js/DataTables/pdfmake/pdfmake.min.js"></script>
+  <script type="text/javascript" src="js/DataTables/pdfmake/vfs_fonts.js"></script>
+  <script type="text/javascript" src="js/DataTables/DataTables/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" src="js/DataTables/DataTables/dataTables.bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/DataTables/Buttons/js/dataTables.buttons.min.js"></script>
+  <script type="text/javascript" src="js/DataTables/Buttons/js/buttons.bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/DataTables/Buttons/js/buttons.html5.min.js"></script>
+  <script type="text/javascript" src="js/DataTables/Buttons/js/buttons.print.min.js"></script>
+  
+
+  
+
+  <script src="js/script-gerar-dados-abastecimento.js"></script>
+  <script type="text/javascript">
+    
+    
+  </script>
+
+
+</html>
