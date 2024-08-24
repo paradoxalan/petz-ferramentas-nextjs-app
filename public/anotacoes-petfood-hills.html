@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Petz anotações template</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+      <style type="text/css">
+        .medicamento {
+          font-weight: bold;
+          font-size: 1.2em;
+          text-decoration-style: dashed;
+        }
+        *{
+          background-color: #fff;
+        }
+
+        body{
+          font-family: 'Roboto', sans-serif;
+        }
+
+        div.main {
+          width: 90%;
+          margin: 10px auto;
+        }
+
+        .white {
+          color: white;
+        }
+        h2{
+          font-weight: bold;
+          margin-bottom: 0;
+          letter-spacing: .05em;
+        }
+
+        h4 {
+          text-align: center;
+        }
+
+
+        ul {
+          margin: 0;
+          margin-bottom: 0;
+          padding-bottom: 0;
+          list-style-type: none;
+        }
+
+        p{
+          -moz-osx-font-smoothing: grayscale;
+          -webkit-font-smoothing: antialiased !important;
+          -moz-font-smoothing: antialiased !important;
+          text-rendering: optimizelegibility !important;
+          letter-spacing: .03em;
+          color: #777;
+          margin-bottom: 0;
+        }
+
+        .text-style-one {
+          color: #777;
+          font-size: 16px;
+          font-family: "Roboto", Arial;
+          line-height: 1.25em;
+          padding: 0;
+          text-align: justify;
+        }
+
+        .text-style-two{
+          color: #333;
+          font-weight: 400;
+          font-size: 1rem;
+          line-height: 1.8;
+          text-align: justify;
+          margin-bottom: 0;
+        }
+        .table-info td.label{
+          min-width: 25%;
+          max-width: 25%;
+          width: 25%;
+          text-align: right;
+        }
+        
+        .table-info, .table-info tr,.table-info td{
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+        .table-info, .table-info tr,.table-info td{
+          
+        }
+        .table-info {
+          margin-bottom: 0;
+          padding-bottom: 0;
+          width: 100%;
+        }
+        @page {
+            size: 21cm 29.7cm;
+            margin: 30mm 45mm 30mm 45mm;
+             /* change the margins as you want them to be. */
+        }
+
+        .frame2 {
+          margin-left: 30px;
+        }
+        .frame1 {
+          margin-right: 30px;
+        }
+
+        @media print{@page {size: landscape}}
+
+        body {
+          margin: 18px;
+        }
+        div.produtos-container {
+          
+        }
+        table.table-produtos {
+          border: none;
+          width: 100%;
+        }
+        table.table-produtos td, table.table-produtos th{
+          border: 1px solid black;
+        }
+        table.table-produtos th{
+          border-top: none;
+        }
+        table.table-produtos th{
+          text-align: center;
+        }
+        table.table-produtos .produto{
+          width: 80%;          
+        }
+        table.table-produtos .qtd{
+          width: 20%;
+        }
+        td.spanned {
+          padding: 0;
+        }
+        td.titulo {
+          text-align: center;
+        }
+        td.titulo h4 {
+          margin: 0;
+          padding: 0;
+          font-weight: bold;
+        }
+        .hidden-print {
+          margin-bottom: 8px;
+          text-align: center;
+        }
+        @media print {
+           .hidden-print {
+              visibility: hidden;
+           }
+        }
+      </style>
+  </head>
+  <body>
+    <div class="main">
+
+      <div>
+        <a target="" href="/menu.html">
+          <i class="fa fa-arrow-left"></i> voltar 
+        </a>
+      </div>
+
+      <div>
+        <a target="_blank" href="https://teams.microsoft.com/convene/meetings?url=%2Fl%2Fmeetup-join%2F19%3Ameeting_OTc3MDIxZTgtZjNhMC00YmRiLWE4MTEtM2FiNzk3OWRjMmRh%40thread.v2%2F0%3Fcontext%3D%257B%2522IsBroadcastMeeting%2522%253Atrue%252C%2522role%2522%253A%2522a%2522%252C%2522Tid%2522%253A%25224ca8e160-86e6-4d95-bfd9-16f0eef52e7f%2522%252C%2522Oid%2522%253A%25222735f453-994f-4729-8435-97057be9560d%2522%257D&isanonymous=true&tenantId=4ca8e160-86e6-4d95-bfd9-16f0eef52e7f">
+          Link da live
+        </a>
+      </div>
+
+      <h1>Anotações live Petfood - Hills</h1>
+      
+      <div class="card" style="">
+        <div class="card-body">
+          <div class="card-title">
+            <h2 class="bg-light">Tecnologia antioxidante Hills</h2>
+          </div>
+          <p class="text-style-one unstyled">
+            Vitamina E, Selênio, Vitamina C, Beta-caroteno <br>
+            antioxidante fazem proteção nas células, prolongando a vida das células <br>
+            geralmente outras marcas colocam isso somente em linhas senior <br>
+            a Hills tem em todas linhas essa tecnologia <br>
+          </p>  
+        </div>
+      </div>
+
+      <div class="card" style="">
+        <div class="card-body">
+          <div class="card-title">
+            <h2 class="bg-light">Hills</h2>
+          </div>
+          <p class="text-style-one unstyled">
+            Todos as linhas de produto são clinicamente comprovados <br>
+            se está escrito alguma coisa há estudos comprovando <br>
+            Ingredientes de alta qualidade
+          </p>  
+        </div>
+      </div>
+
+      <div class="card" style="">
+        <div class="card-body">
+          <div class="card-title">
+            <h2 class="bg-light">Tecnologia ActiveBiome+</h2>
+          </div>
+          <p class="text-style-one unstyled">
+            presente em todos da linha filhotes, presença de fibras prebioticas, que são: comida para as bactérias benéficas do intestino do animal, levando a boa saude intestinal, melhor absorção de alimento, fezes mais firmes, diminui problemas gastrointestinal, imunoestimulação (melhor resposta vacinal)
+          </p>  
+        </div>
+      </div>
+      <div class="card" style="">
+        <div class="card-body">
+          <div class="card-title">
+            <h2 class="bg-light">Principais linhas da Hills</h2>
+          </div>
+          <p class="text-style-one unstyled">
+            Science Diet: Linha de manutenção, para animais saudaveis
+            Prescription Diet: linha de prescrição, para animais doentes, indicado por médico veterinário, problemas de pele, renal, kd, id, ad, ud
+          </p>
+        </div>
+      </div>
+      <div class="card" style="">
+        <div class="card-body">
+          <div class="card-title">
+            <h2 class="bg-light">Nutrientes e benefícios</h2>
+          </div>
+          <p class="text-style-one unstyled">
+            Proteína de alta digestabilidade, o animal vai aproveitar muito do que ele come, vai sentir saciedade com pouca quantidade, pois absorve mais e menos fezes, não precisa de muita proteína, média de 90% de digestabilidade <br>
+            Fonte de fibras, saúde do sistema gastro-intestinal <br>
+            Complexo exclusivo de ácidos graxos ômega 6, para pele saudável e pelagem brilhante <br>
+            Níveis controlados de cálcio, desenvolvimento e manutenção de ossos fortes <br>
+            Níveis ideais de minerais <br>
+            Fórmula antioxidante superior, auxilia no fortalecimento do sistema imune
+          </p>  
+        </div>
+      </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+ <script type="text/javascript">
+   
+ </script>
+</html>
