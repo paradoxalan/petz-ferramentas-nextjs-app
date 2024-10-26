@@ -29,6 +29,10 @@ rewrites: async () => [
       source: "/barcode-gen.html",
       destination: "/barcode-gen.html",
     },
+    {
+      source: "/promocoes.html",
+      destination: "/promocoes.html",
+    }
   ]
 };
 
